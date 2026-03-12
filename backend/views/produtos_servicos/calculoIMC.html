@@ -56,53 +56,33 @@
     <!-- Conteúdo Principal -->
     <main class="content">
         <section>
-            <h2>Produtos e Serviços</h2>
-            <p>Consulta e gestão dos produtos e serviços disponíveis no ginásio.</p>
+            <h2 onmouseover="console.log('Bem-vindo ao Cálculo de IMC do ISEP')">Cálculo de IMC</h2>
+            <p>Esta funcionalidade permite calcular o Índice de Massa Corporal (IMC),
+                uma medida utilizada para avaliar se o peso de uma pessoa está adequado à sua
+                altura.</p>
         </section>
     </main>
 
-    <div class="home-wrapper">
-        <div class="home-row">
-            <a href="calculoIMC.html" class="unlink">
-                <div class="home-option">
-                    <h3><i class="fa-solid fa-users"></i></h3>
-                    <p>Calculo de IMC</p>
-                </div>
-            </a>
-            <a href="encaminhamento.html" class="unlink">
-                <div class="home-option">
-                    <h3><i class="fa-solid fa-user-plus"></i></h3>
-                    <p>Avaliação</p>
-                </div>
-            </a>
-            <a href="precario.html" class="unlink">
-                <div class="home-option">
-                    <h3><i class="fa-solid fa-chart-column"></i></h3>
-                    <p>Preçario</p>
-                </div>
-            </a>
-        </div>
-        <div class="home-row">
-            <a href="#" class="unlink">
-                <div class="home-option">
-                    <h3><i class="fa-solid fa-upload"></i></h3>
-                    <p>Contratos</p>
-                </div>
-            </a>
-            <a href="#" class="unlink">
-                <div class="home-option">
-                    <h3><i class="fa-solid fa-users"></i></h3>
-                    <p>Funcionalidade</p>
-                </div>
-            </a>
-            <a href="#" class="unlink">
-                <div class="home-option">
-                    <h3><i class="fa-solid fa-user-gear"></i></h3>
-                    <p>Funcionalidade</p>
-                </div>
-            </a>
-        </div>
+    <div class="form-wrapper">
+        <h2><strong><i class="fa-solid fa-heart-pulse"></i> Calculadora de IMC</strong></h2>
+        <hr>
+        <form>
+            <div class="form-group">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" name="peso">
+            </div>
+            <div class="form-group">
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" name="altura">
+            </div>
+            <div class="form-group">
+                <label>Resultado:</label><br>
+                <span id="indicadorIMC">
+            </div>
+        </form>
     </div>
+
+    <script src="../../includes/funcoes.js"></script>
 
 </body>
 

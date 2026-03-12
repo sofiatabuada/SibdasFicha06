@@ -56,54 +56,32 @@
     <!-- Conteúdo Principal -->
     <main class="content">
         <section>
-            <h2>Produtos e Serviços</h2>
-            <p>Consulta e gestão dos produtos e serviços disponíveis no ginásio.</p>
+            <h2>Avaliação de Condições de Saúde</h2>
+            <p>Utilize este formulário para selecionar as condições de saúde relevantes do
+                cliente. As informações escolhidas irão gerar uma recomendação personalizada para o
+                plano de treino.</p>
         </section>
     </main>
-
-    <div class="home-wrapper">
-        <div class="home-row">
-            <a href="calculoIMC.html" class="unlink">
-                <div class="home-option">
-                    <h3><i class="fa-solid fa-users"></i></h3>
-                    <p>Calculo de IMC</p>
-                </div>
-            </a>
-            <a href="encaminhamento.html" class="unlink">
-                <div class="home-option">
-                    <h3><i class="fa-solid fa-user-plus"></i></h3>
-                    <p>Avaliação</p>
-                </div>
-            </a>
-            <a href="precario.html" class="unlink">
-                <div class="home-option">
-                    <h3><i class="fa-solid fa-chart-column"></i></h3>
-                    <p>Preçario</p>
-                </div>
-            </a>
-        </div>
-        <div class="home-row">
-            <a href="#" class="unlink">
-                <div class="home-option">
-                    <h3><i class="fa-solid fa-upload"></i></h3>
-                    <p>Contratos</p>
-                </div>
-            </a>
-            <a href="#" class="unlink">
-                <div class="home-option">
-                    <h3><i class="fa-solid fa-users"></i></h3>
-                    <p>Funcionalidade</p>
-                </div>
-            </a>
-            <a href="#" class="unlink">
-                <div class="home-option">
-                    <h3><i class="fa-solid fa-user-gear"></i></h3>
-                    <p>Funcionalidade</p>
-                </div>
-            </a>
-        </div>
+    
+    <div class="form-wrapper">
+        <h2><strong><i class="fa-solid fa-dumbbell"></i> Avaliação de Condições de Saúde</strong></h2>
+        <hr>
+        <form oninput="avaliarCondicoes()">
+            <div>
+                <input type="checkbox" id="temProblemasCostas" name="condicao">
+                <label>Problemas de costas</label><br>
+                <label><input type="checkbox" id="estaGravida" name="condicao"> Grávida</label><br>
+                <label><input type="checkbox" id="temDiabetes" name="condicao"> Diabético/a</label>
+            </div>
+            <div class="form-group">
+                <label>Recomendação:</label>
+                <div id="mensagem" class="alert text-center"></div>
+            </div>
+        </form>
     </div>
 
+    <script src="../../includes/funcoes.js"></script>
+    
 </body>
 
 </html>
